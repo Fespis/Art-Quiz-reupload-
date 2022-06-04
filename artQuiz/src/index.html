@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link type="image/x-icon" href="./images/favicon.png" rel="shortcut icon" />
+    <link type="Image/x-icon" href="./images/favicon.png" rel="icon" />
+  </head>
+  <body>
+    <div class="page1 block">
+      <header class="settings-image">
+        <button class="settings-icon"></button>
+      </header>
+      <main class="main-page1">
+        <div class="artquiz-logo"><img src="images/artquiz.png" alt="" /></div>
+        <div class="button-main-page button-text-center">Artist quiz</div>
+        <div class="button-main-page button-text-center">Pictures quiz</div>
+      </main>
+      <footer class="footer-icons">
+        <a href="https://rs.school/js/"><img src="images/rs-school-icon.png" /></a>
+        <a href="https://github.com/fespis">Fespis 2021</a>
+      </footer>
+    </div>
+    <div class="page2 hidden">
+      <header class="header-page2">
+        <div class="settings-back-text">Home</div>
+        <button class="settings-back"></button>
+        <div class="title-settings">Settings</div>
+      </header>
+      <main class="main-page2">
+        <div>
+          <div class="volume-title">Volume</div>
+          <div>
+            <input class="volume-range" type="range" />
+            <div class="volume-images">
+              <img src="images/bi_volume-mute.png" alt="" />
+              <img src="images/bi_volume-down.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="settings-title-time">Time game</div>
+          <div class="settings-time">
+            <div class="settings-time-turn"></div>
+            <input type="checkbox" class="ios8-switch" id="checkbox-1" />
+            <label for="checkbox-1"></label>
+          </div>
+        </div>
+        <div>
+          <div class="settings-title-time">Time to answer</div>
+          <div>
+            <button
+              class="settings-button"
+              type="button"
+              onclick="this.nextElementSibling.stepDown(5);"
+            >
+              -
+            </button>
+            <input
+              class="settings-button-number"
+              type="number"
+              min="5"
+              max="30"
+              value="5"
+              disabled
+            />
+            <button
+              class="settings-button"
+              type="button"
+              onclick="this.previousElementSibling.stepUp(5);"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="settings-save">
+          <div class="settings-save-button">Default</div>
+          <div class="settings-save-button">Save</div>
+        </div>
+      </main>
+      <footer class="footer-icons">
+        <a href="https://rs.school/js/"><img src="images/rs-school-icon.png" /></a>
+        <a href="https://github.com/fespis">Fespis</a>
+        <div>2021</div>
+      </footer>
+    </div>
+    <div class="page3 hidden">
+      <header class="page3-header">
+        <div class="page3-header-icons">
+          <div><img src="images/artquiz.png" class="logo-icon-home1" alt="" /></div>
+          <div class="page3-header-navigations">
+            <div class="page4-header-div-home">
+              <button class="page3-img-navigation-home"></button>
+              <div>Home</div>
+            </div>
+          </div>
+          <button class="page3-settings"></button>
+        </div>
+      </header>
+      <main>
+        <div class="page3-main-title">Categories</div>
+        <div class="page3-main-categories">
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page3-main-item">
+            <div class="page3-main-item-header">
+              <div class="page3-main-item-title"></div>
+              <div class="page3-main-item-score"></div>
+            </div>
+            <div class="page3-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="page3-footer"></footer>
+    </div>
+    <div class="page4 hidden">
+      <header class="page4-header">
+        <div class="page4-header-icons">
+          <div><img src="images/artquiz.png" class="logo-icon-home2" alt="" /></div>
+          <div class="page4-header-navigations">
+            <div class="page4-header-div-home">
+              <button class="page4-img-navigation-home"></button>
+              <div>Home</div>
+            </div>
+          </div>
+          <button class="page4-settings"></button>
+        </div>
+      </header>
+      <main>
+        <div class="page4-main-title">Categories</div>
+        <div class="page4-main-categories">
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+          <div class="page4-main-item">
+            <div class="page4-main-item-header">
+              <div class="page4-main-item-title"></div>
+              <div class="page4-main-item-score"></div>
+            </div>
+            <div class="page4-main-item-image">
+              <div class="score">Score</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="page4-footer"></footer>
+    </div>
+    <div class="page5 hidden">
+      <header class="page5-header">
+        <div class="page5-header-progress">
+          <button class="page5-header-close"></button>
+          <div class="page5-progress-range">
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+            <div class="page5-progress-range-circle"></div>
+          </div>
+          <div class="page5-time">0</div>
+        </div>
+      </header>
+      <div class="page5-exit-game hidden">
+        <button class="page5-exit-game-close"></button>
+        <div class="page5-exit-game-title">Do you really want to quit the game?</div>
+        <div class="page5-exit-game-buttons">
+          <div class="page5-exit-game-cancel button-text-center">Cancel</div>
+          <div class="page5-exit-game-exit button-text-center">Yes</div>
+        </div>
+      </div>
+      <div class="page5-true-false hidden">
+        <div class="page5-true-false-image">
+          <div class="page5-true-false-image-check-mark"></div>
+        </div>
+        <div>
+          <div class="page5-true-false-name"></div>
+          <div class="page5-true-false-year"></div>
+        </div>
+        <div class="page5-true-false-author"></div>
+        <div class="page5-true-false-button button-text-center">Next</div>
+      </div>
+      <div class="page5-last-menu hidden">
+        <div class="page5-last-menu-image"></div>
+        <div class="page5-last-menu-congratulations">Congratulations!</div>
+        <div class="page5-last-menu-score"></div>
+        <div class="page5-last-menu-buttons">
+          <div class="page5-last-menu-button-home button-text-center">Home</div>
+          <div class="page5-last-menu-button-next button-text-center">Next Quiz</div>
+        </div>
+      </div>
+      <main class="page5-main">
+        <div class="page5-main-title">Who is the author of this picture?</div>
+        <div class="page5-main-quiz">
+          <div class="page5-main-test">
+            <div class="page5-main-image"></div>
+          </div>
+          <div class="page5-main-block">
+            <div class="page5-main-answers-wrap">
+              <div class="page5-main-answers button-text-center"></div>
+              <div class="page5-main-answers button-text-center"></div>
+            </div>
+            <div class="page5-main-answers-wrap">
+              <div class="page5-main-answers button-text-center"></div>
+              <div class="page5-main-answers button-text-center"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-icons">
+        <a href="https://rs.school/js/"><img src="images/rs-school-icon.png" /></a>
+        <a href="https://github.com/fespis">Fespis</a>
+        <div>2021</div>
+      </footer>
+    </div>
+    <div class="page6 hidden">
+      <header class="page6-header">
+        <div class="page6-header-progress">
+          <button class="page6-header-close"></button>
+          <div class="page6-progress-range">
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+            <div class="page6-progress-range-circle"></div>
+          </div>
+          <div class="page6-time">0</div>
+        </div>
+      </header>
+      <div class="page6-exit-game hidden">
+        <button class="page6-exit-game-close"></button>
+        <div class="page6-exit-game-title">Do you really want to quit the game?</div>
+        <div class="page6-exit-game-buttons">
+          <div class="page6-exit-game-cancel button-text-center">Cancel</div>
+          <div class="page6-exit-game-exit button-text-center">Yes</div>
+        </div>
+      </div>
+      <div class="page6-true-false hidden">
+        <div class="page6-true-false-image">
+          <div class="page6-true-false-image-check-mark"></div>
+        </div>
+        <div>
+          <div class="page6-true-false-name"></div>
+          <div class="page6-true-false-year"></div>
+        </div>
+        <div class="page6-true-false-author"></div>
+        <div class="page6-true-false-button button-text-center">Next</div>
+      </div>
+      <div class="page6-last-menu hidden">
+        <div class="page6-last-menu-image"></div>
+        <div class="page6-last-menu-congratulations">Congratulations!</div>
+        <div class="page6-last-menu-score"></div>
+        <div class="page6-last-menu-buttons">
+          <div class="page6-last-menu-button-home button-text-center">Home</div>
+          <div class="page6-last-menu-button-next button-text-center">Next Quiz</div>
+        </div>
+      </div>
+      <main class="page6-main">
+        <div class="page6-main-title"></div>
+        <div class="page6-main-quiz">
+          <div class="page6-main-block">
+            <div class="page6-main-answers-wrap">
+              <div class="page6-main-test">
+                <div class="page6-main-image"></div>
+              </div>
+              <div class="page6-main-test">
+                <div class="page6-main-image"></div>
+              </div>
+            </div>
+            <div class="page6-main-answers-wrap">
+              <div class="page6-main-test">
+                <div class="page6-main-image"></div>
+              </div>
+              <div class="page6-main-test">
+                <div class="page6-main-image"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-icons">
+        <a href="https://rs.school/js/"><img src="images/rs-school-icon.png" /></a>
+        <a href="https://github.com/fespis">Fespis</a>
+        <div>2021</div>
+      </footer>
+    </div>
+    <div class="page7 hidden">
+      <header class="page7-header">
+        <div class="page7-header-icons">
+          <div><img src="images/artquiz.png" class="logo-icon-home3" alt="" /></div>
+          <div class="page7-header-navigations">
+            <div>
+              <button class="page7-img-navigation-home"></button>
+              <div>Home</div>
+            </div>
+          </div>
+          <button class="page7-settings"></button>
+        </div>
+      </header>
+      <main>
+        <div class="page7-main-title">Score</div>
+        <div class="page7-main-categories">
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+          <div class="page7-main-item">
+            <div class="page7-main-item-header">
+              <div class="page7-main-item-title"></div>
+            </div>
+            <div class="page7-main-item-image">
+              <div class="page7-main-score hidden">
+                <div class="page7-main-score-name"></div>
+                <div class="page7-main-score-year"></div>
+                <div class="page7-main-score-author"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="page7-footer"></footer>
+    </div>
+  </body>
+</html>

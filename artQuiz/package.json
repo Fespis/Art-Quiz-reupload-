@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "description": "My new js application",
+  "private": true,
+  "name": "my-app",
+  "scripts": {
+    "lint": "eslint src/index.js",
+    "start": "rss-scripts start",
+    "build": "rss-scripts build"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "rss-scripts": "^0.2.4"
+  }
+}
